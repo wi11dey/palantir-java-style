@@ -54,6 +54,7 @@
 			(arglist-cont . (first palantir-java-style-lineup-cascaded-calls 0))
 			(arglist-intro . (add palantir-java-style-lineup-anchor ++ palantir-java-style-lineup-single-arg))
 			(arglist-cont-nonempty . ++)
+			(arglist-close . ++)
 			(topmost-intro-cont . 0)
 			(template-args-cont . 16)))))
 
