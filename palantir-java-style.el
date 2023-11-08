@@ -51,6 +51,8 @@
     (indent-tabs-mode . nil)
     (c-basic-offset . 4)
     (c-offsets-alist . ((statement-cont . ++)
+			(statement-block-intro . (add palantir-java-style-lineup-anchor +))
+			(block-close . palantir-java-style-lineup-anchor)
 			(arglist-cont . (first palantir-java-style-lineup-cascaded-calls 0))
 			(arglist-intro . (add palantir-java-style-lineup-anchor ++ palantir-java-style-lineup-single-arg))
 			(arglist-cont-nonempty . ++)
