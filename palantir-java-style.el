@@ -26,6 +26,8 @@
 
 ;;; Code:
 
+(declare-function c-langelem-col "cc-defs" (langelem &optional preserve-point))
+
 ;;;###autoload
 (defun palantir-java-style-lineup-anchor (langelem)
   (vector (c-langelem-col langelem :preserve-point)))
@@ -39,7 +41,7 @@
       '++)))
 
 ;;;###autoload
-(defun palantir-java-style-lineup-cascaded-calls (langelem)
+(defun palantir-java-style-lineup-cascaded-calls (_langelem)
   (save-excursion
     (back-to-indentation)
     (when (looking-at (rx ?.))
